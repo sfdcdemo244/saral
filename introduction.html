@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" class="pink-theme">
+
+
+<!-- Mirrored from maxartkiller.com/website/GoMobileUX/gofruit/introduction.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 03:00:47 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Maxartkiller">
+
+    <title></title>
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="vendor/materializeicon/material-icons.css">
+
+    <!-- Roboto fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+</head>
+
+<body>
+    <div class="row no-gutters vh-100 loader-screen">
+        <div class="col align-self-center text-white text-center">
+            <img src="img/logo1.png" alt="logo">
+            <h1><span class="font-weight-light"></span>Saral</h1>
+            <div class="laoderhorizontal">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <a href="login.html" class="btn btn-default button-rounded-54 shadow text-white float-bottom-right"> <i class='fas fa-arrow-right'></i></a>
+    <!-- Swiper -->
+    <div class="swiper-container introduction vh-100">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide overflow-hidden bg-orange text-white">
+                <div class="row no-gutters h-100">
+                    <img src="img/r2.png" alt="" class=" right-image align-self-center" style=" height:  270px; width: 220px;"  >
+                    <div class="col align-self-center px-3">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6 text-left">
+                                        <h1 class="text-uppercase">Saral </h1><p>allows real time queue status information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide overflow-hidden bg-success text-white">
+                <div class="row no-gutters h-100">
+                    <img src="img/q.png" alt="" class=" right-image align-self-center" style=" height:  250px; width: 200px;" >
+                    <div class="col align-self-center px-3">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6 text-left">
+                                        <h1 class="text-uppercase">Saral</h1>
+                                        <p>Reduces patient wait time and service time considerably.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide overflow-hidden bg-warning text-white">
+                <div class="row no-gutters h-100">
+                    <img src="img/q21.png" alt="" class=" right-image align-self-center" style=" height:  300px; width: 250px;" >
+                    <div class="col align-self-center px-3">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6 text-left">
+                                        <h1 class="text-uppercase">Saral</h1>
+                                        <p>Makes service areas less crowded with patients.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- notification -->
+     <div class="notification bg-white shadow bottom border-primary">
+        <div class="row">
+            <div class="col-auto align-self-center pr-0">
+                <i class="material-icons text-primary md-36">fullscreen</i>
+            </div>
+            <div class="col">
+                <h6>Viewing in Phone?</h6>
+                <p class="mb-0 text-secondary">Double tap to enter into fullscreen mode for each page.</p>
+            </div>
+            <div class="col-auto align-self-center pl-0">
+                <button class="btn btn-link closenotification"><i class="material-icons text-secondary text-mute md-18 ">close</i></button>
+            </div>
+        </div>
+    </div>
+    <!-- notification ends -->
+
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- template custom js -->
+    <script src="js/main.js"></script>
+
+    <!-- page level script -->
+    <script>
+        $(window).on('load', function() {
+            var swiper = new Swiper('.introduction', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+            /* notification view and hide */
+            setTimeout(function() {
+                $('.notification').addClass('active');
+                 setTimeout(function() {
+                     $('.notification').removeClass('active');
+                 }, 3500);
+            }, 500);
+            $('.closenotification').on('click', function(){
+                $(this).closest('.notification').removeClass('active')
+            });
+        });
+
+    </script>
+</body>
+
+
+<!-- Mirrored from maxartkiller.com/website/GoMobileUX/gofruit/introduction.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 03:00:53 GMT -->
+</html>
