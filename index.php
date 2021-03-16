@@ -37,15 +37,15 @@
     </div>
 
     <!-- jquery, popper and bootstrap js -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
 
     <!-- swiper js -->
-    <script src="vendor/swiper/js/swiper.min.js"></script>
+    <script src="./vendor/swiper/js/swiper.min.js"></script>
     
     <!-- template custom js -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     
     <script>
         $(window).on('load', function(){
